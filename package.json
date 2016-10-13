@@ -10,11 +10,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^0.25.0",
     "elm-webpack-loader": "^3.0.6",
     "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.10.1",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.2",
     "webpack-merge": "^0.14.1",
     "webpack-validator": "^2.2.9"
+  },
+  "dependencies": {
+    "compass-mixins": "^0.12.10"
   }
 }

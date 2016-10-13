@@ -23,15 +23,20 @@ module.exports = validate({
 		})
 	],
 	module: {
-		loaders: [
-			{
-				test: /\.elm$/,
-				loader: 'elm-webpack',
-				exclude: [
-					/node_modules/,
-					/elm-stuff/
-				]
-			}
-		]
-	}
+		loaders: 
+			[
+				{
+					test: /\.elm$/,
+					loader: 'elm-webpack',
+					exclude: [
+						/node_modules/,
+						/elm-stuff/
+					]
+				},
+				{
+					test: /\.scss$/,
+					loader: "style-loader!raw-loader!sass-loader?includePaths[]=" + path.resolve(__dirname, "./node_modules/compass-mixins/lib")
+	            }
+        	]
+    }
 });
